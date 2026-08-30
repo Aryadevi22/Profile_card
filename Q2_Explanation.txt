@@ -1,0 +1,23 @@
+Q2 SHORT EXPLANATION
+
+The main profile-card container uses position: relative. This establishes the
+card as the positioning context for its absolutely positioned children.
+
+The "Pro Member" badge uses position: absolute with top and right values, so
+it stays at the top-right corner of the profile card.
+
+The decorative star icon is also absolutely positioned. Its containing
+element, .image-area, is relatively positioned, so the icon can be placed
+at the bottom-left of the profile image and overlap the image.
+
+The profile card uses padding, margin, border, border-radius, and box-shadow
+to demonstrate CSS box-model properties. A linear-gradient is used as the
+card background.
+
+Class selectors such as .profile-card and .badge, the ID selector
+#profile-container, and descendant selectors such as .profile-card .bio
+are used in the stylesheet.
+
+The media query @media screen and (max-width: 599px) changes the layout for
+small screens. The image and text stack vertically, the profile image is
+reduced from 220px to 150px, and the Pro Member badge is reduced in size.

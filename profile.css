@@ -1,0 +1,194 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
+    background: #eef2f7;
+    color: #273444;
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+#profile-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 60px auto;
+}
+
+.profile-card {
+    position: relative;
+    padding: 55px;
+    margin: 0 auto;
+    border: 1px solid #d9e2ec;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #ffffff 0%, #edf5fb 100%);
+    box-shadow: 0 18px 45px rgba(24, 39, 75, 0.12);
+}
+
+.profile-card .badge {
+    position: absolute;
+    top: 22px;
+    right: 25px;
+    padding: 7px 15px;
+    border-radius: 20px;
+    background: #245b88;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.image-area {
+    position: relative;
+    flex: 0 0 220px;
+    width: 220px;
+}
+
+.profile-card .profile-image {
+    display: block;
+    width: 220px;
+    height: 220px;
+    border: 6px solid #ffffff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0 8px 25px rgba(24, 39, 75, 0.18);
+}
+
+.image-area .decorative-icon {
+    position: absolute;
+    left: -8px;
+    bottom: 8px;
+    width: 48px;
+    height: 48px;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    background: #2d7db5;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.profile-details {
+    flex: 1;
+}
+
+.profile-details .role {
+    margin: 0 0 8px 0;
+    color: #2d7db5;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.profile-details h1 {
+    margin: 0 0 12px 0;
+    color: #172a46;
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+.profile-card .bio {
+    max-width: 540px;
+    margin: 0 0 20px 0;
+    color: #536273;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.education {
+    margin: 0;
+    color: #34495e;
+    font-size: 14px;
+}
+
+.education strong {
+    color: #172a46;
+}
+
+.separator {
+    margin: 0 8px;
+    color: #9aa8b5;
+}
+
+@media screen and (max-width: 599px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    #profile-container {
+        margin: 25px auto;
+    }
+
+    .profile-card {
+        padding: 70px 25px 30px 25px;
+        border-radius: 14px;
+    }
+
+    .profile-card .badge {
+        top: 18px;
+        right: 18px;
+        padding: 6px 11px;
+        font-size: 10px;
+    }
+
+    .profile-content {
+        display: block;
+        text-align: center;
+    }
+
+    .image-area {
+        width: 150px;
+        margin: 0 auto 28px auto;
+    }
+
+    .profile-card .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .image-area .decorative-icon {
+        left: -5px;
+        bottom: 4px;
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+        line-height: 32px;
+        border-width: 3px;
+    }
+
+    .profile-details .role {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .profile-details h1 {
+        font-size: 29px;
+    }
+
+    .profile-card .bio {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .education {
+        font-size: 13px;
+    }
+
+    .separator {
+        display: block;
+        height: 3px;
+        visibility: hidden;
+    }
+}
